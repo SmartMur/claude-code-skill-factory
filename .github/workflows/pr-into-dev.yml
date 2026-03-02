@@ -49,7 +49,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Check if PR is from fork
         id: fork-safety
@@ -72,8 +72,9 @@ jobs:
 
     steps:
       - name: Validate source branch name
+        env:
+          BRANCH_NAME: ${{ github.head_ref }}
         run: |
-          BRANCH_NAME="${{ github.head_ref }}"
           echo "🔍 Validating branch name: $BRANCH_NAME"
 
           # Allow dependabot and renovate branches
@@ -111,7 +112,7 @@ jobs:
 
     steps:
       - name: Validate conventional commit format
-        uses: amannn/action-semantic-pull-request@v5
+        uses: amannn/action-semantic-pull-request@e32d7e603df1aa1ba07e981f2a23455dee596825 # v5
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
@@ -136,7 +137,7 @@ jobs:
 
       - name: Add comment on invalid title
         if: failure() && needs.fork-check.outputs.should-skip-writes != 'true'
-        uses: actions/github-script@v7
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
         with:
           github-token: ${{ github.token }}
           script: |
@@ -190,7 +191,7 @@ jobs:
     steps:
       - name: Check for linked issues
         id: check-linked-issue
-        uses: actions/github-script@v7
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
         with:
           github-token: ${{ github.token }}
           script: |
@@ -214,7 +215,7 @@ jobs:
 
       - name: Add comment on missing linked issue
         if: failure() && needs.fork-check.outputs.should-skip-writes != 'true'
-        uses: actions/github-script@v7
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
         with:
           github-token: ${{ github.token }}
           script: |
@@ -274,10 +275,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '20'
 
@@ -300,7 +301,7 @@ jobs:
 
       - name: Post quality results comment
         if: always() && needs.fork-check.outputs.should-skip-writes != 'true'
-        uses: actions/github-script@v7
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
         with:
           github-token: ${{ github.token }}
           script: |

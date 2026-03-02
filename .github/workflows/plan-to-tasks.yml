@@ -85,12 +85,12 @@ jobs:
             fi
           fi
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           fetch-depth: 1
 
       - name: Create Task Issues
-        uses: anthropics/claude-code-action@v1
+        uses: anthropics/claude-code-action@9d86c9b0c946914e9c71ac5ee1c008959cbfa9af # v1
         env:
           GH_TOKEN: ${{ secrets.PROJECTS_TOKEN }}
         with:
