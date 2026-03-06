@@ -1,0 +1,2284 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://smartmur.github.io/claude-code-skill-factory/workflow/">
+      
+      
+        <link rel="prev" href="../foundation/project-status/">
+      
+      
+        <link rel="next" href="../contributing/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/smartmur-logo.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+    
+    
+      
+        <title>Workflow Adaptation - SmartMur Skill Factory</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#github-workflow-adaptation-plan" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="SmartMur Skill Factory" class="md-header__button md-logo" aria-label="SmartMur Skill Factory" data-md-component="logo">
+      
+  <img src="../assets/smartmur-logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SmartMur Skill Factory
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Workflow Adaptation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SmartMur/claude-code-skill-factory" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SmartMur/claude-code-skill-factory
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SmartMur Skill Factory" class="md-nav__button md-logo" aria-label="SmartMur Skill Factory" data-md-component="logo">
+      
+  <img src="../assets/smartmur-logo.svg" alt="logo">
+
+    </a>
+    SmartMur Skill Factory
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SmartMur/claude-code-skill-factory" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SmartMur/claude-code-skill-factory
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Foundation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Foundation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../foundation/mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../foundation/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../foundation/roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../foundation/project-status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project Status
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflow Adaptation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflow Adaptation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Objective
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-state-vs-desired-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Current State vs. Desired State
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Current State vs. Desired State">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#current-workflow-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Workflow Problems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desired-workflow-blueprint-based" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desired Workflow (Blueprint-Based)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blueprint-patterns-to-adopt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏗️ Blueprint Patterns to Adopt
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ Blueprint Patterns to Adopt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pattern-1-branch-naming-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern 1: Branch Naming Convention
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-2-branching-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern 2: Branching Strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-3-auto-branch-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern 3: Auto-Branch Creation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-5-release-gates-main-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern 5: Release Gates (main branch)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-6-claude-code-review-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern 6: Claude Code Review Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-7-smart-commit-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern 7: Smart Commit Command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-8-create-pr-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern 8: Create PR Command
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-roadmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📋 Implementation Roadmap
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 Implementation Roadmap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-repository-setup-week-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1: Repository Setup (Week 1)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-core-workflows-week-1-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2: Core Workflows (Week 1-2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-slash-commands-week-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Slash Commands (Week 2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-documentation-training-week-2-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4: Documentation &amp; Training (Week 2-3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-win-start-with-minimal-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Quick Win: Start with Minimal Implementation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Quick Win: Start with Minimal Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immediate-actions-this-week" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Immediate Actions (This Week)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Success Criteria
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Success Criteria">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-1-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Week 1 Goals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-2-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Week 2 Goals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-3-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Week 3 Goals
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎓 Team Training
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎓 Team Training">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-developers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Developers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-reviewers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Reviewers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customization-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔧 Customization Options
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Customization Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#branch-naming-variations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Branch Naming Variations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branching-strategy-variations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Branching Strategy Variations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quality-gates-customization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality Gates Customization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Reference Links
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Objective
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-state-vs-desired-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Current State vs. Desired State
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Current State vs. Desired State">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#current-workflow-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Workflow Problems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desired-workflow-blueprint-based" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desired Workflow (Blueprint-Based)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blueprint-patterns-to-adopt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏗️ Blueprint Patterns to Adopt
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ Blueprint Patterns to Adopt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pattern-1-branch-naming-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern 1: Branch Naming Convention
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-2-branching-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern 2: Branching Strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-3-auto-branch-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern 3: Auto-Branch Creation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-5-release-gates-main-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern 5: Release Gates (main branch)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-6-claude-code-review-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern 6: Claude Code Review Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-7-smart-commit-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern 7: Smart Commit Command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-8-create-pr-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern 8: Create PR Command
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-roadmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📋 Implementation Roadmap
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 Implementation Roadmap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-repository-setup-week-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1: Repository Setup (Week 1)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-core-workflows-week-1-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2: Core Workflows (Week 1-2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-slash-commands-week-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Slash Commands (Week 2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-documentation-training-week-2-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4: Documentation &amp; Training (Week 2-3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-win-start-with-minimal-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Quick Win: Start with Minimal Implementation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Quick Win: Start with Minimal Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immediate-actions-this-week" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Immediate Actions (This Week)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Success Criteria
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Success Criteria">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-1-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Week 1 Goals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-2-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Week 2 Goals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-3-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Week 3 Goals
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎓 Team Training
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎓 Team Training">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-developers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Developers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-reviewers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Reviewers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customization-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔧 Customization Options
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Customization Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#branch-naming-variations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Branch Naming Variations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branching-strategy-variations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Branching Strategy Variations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quality-gates-customization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality Gates Customization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Reference Links
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="github-workflow-adaptation-plan">GitHub Workflow Adaptation Plan<a class="headerlink" href="#github-workflow-adaptation-plan" title="Permanent link">&para;</a></h1>
+<p><strong>Project</strong>: Claude Code Skills Factory
+<strong>Blueprint Source</strong>: <code>/Users/rezarezvani/projects/claudecode-github-bluprint</code>
+<strong>Date</strong>: November 12, 2025
+<strong>Status</strong>: Planning Phase</p>
+<hr />
+<h2 id="objective">🎯 Objective<a class="headerlink" href="#objective" title="Permanent link">&para;</a></h2>
+<p>Adapt the GitHub workflow blueprint to create an automated, Claude Code-integrated branching and PR workflow for the Skills Factory repository that:</p>
+<ol>
+<li>✅ Enforces clear branch naming conventions</li>
+<li>✅ Prevents direct pushes to <code>main</code></li>
+<li>✅ Routes all PRs through <code>dev</code> branch</li>
+<li>✅ Auto-creates branches from issues</li>
+<li>✅ Integrates Claude Code reviews (@claude)</li>
+<li>✅ Auto-merges and cleans up after approval</li>
+<li>✅ Auto-switches back to <code>dev</code> before next task</li>
+</ol>
+<hr />
+<h2 id="current-state-vs-desired-state">📊 Current State vs. Desired State<a class="headerlink" href="#current-state-vs-desired-state" title="Permanent link">&para;</a></h2>
+<h3 id="current-workflow-problems">Current Workflow Problems<a class="headerlink" href="#current-workflow-problems" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Issue</th>
+<th>Impact</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>No branch naming convention</strong></td>
+<td>Inconsistent branches</td>
+<td><code>fix/psychology-advisor-link</code> (unclear)</td>
+</tr>
+<tr>
+<td><strong>Direct pushes to main</strong></td>
+<td>Bypasses review process</td>
+<td>Recent commits went straight to main</td>
+</tr>
+<tr>
+<td><strong>No automated branch creation</strong></td>
+<td>Manual git commands needed</td>
+<td>Developer creates branches manually</td>
+</tr>
+<tr>
+<td><strong>No PR automation</strong></td>
+<td>Manual PR creation and cleanup</td>
+<td>No auto-merge, no auto-delete</td>
+</tr>
+<tr>
+<td><strong>No Claude Code review integration</strong></td>
+<td>Missing automated reviews</td>
+<td>Reviews done manually</td>
+</tr>
+<tr>
+<td><strong>Manual branch management</strong></td>
+<td>Forgot to switch back to dev</td>
+<td>Stayed on feature branch</td>
+</tr>
+</tbody>
+</table>
+<h3 id="desired-workflow-blueprint-based">Desired Workflow (Blueprint-Based)<a class="headerlink" href="#desired-workflow-blueprint-based" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>1. Create GitHub Issue
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>   ↓
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>2. Label with &#39;claude-code&#39; + &#39;status:ready&#39;
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>   ↓
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>3. **AUTO**: Branch created (feature/issue-123-clear-name)
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>   ↓
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>4. Developer works on branch
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>   ↓
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>5. /commit-smart (quality checks + secrets scan)
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>   ↓
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>6. /create-pr (auto-links issue, adds labels)
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>   ↓
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>7. **AUTO**: PR validation (branch name, title, quality gates)
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>   ↓
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>8. Tag @claude for review
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>   ↓
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>9. **AUTO**: Claude Code review posted
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>   ↓
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>10. After approval → **AUTO**: Merge to dev
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>   ↓
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>11. **AUTO**: Delete source branch
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>   ↓
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>12. **AUTO**: Switch to dev branch
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>   ↓
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>13. Ready for next task
+</code></pre></div>
+<hr />
+<h2 id="blueprint-patterns-to-adopt">🏗️ Blueprint Patterns to Adopt<a class="headerlink" href="#blueprint-patterns-to-adopt" title="Permanent link">&para;</a></h2>
+<h3 id="pattern-1-branch-naming-convention">Pattern 1: Branch Naming Convention<a class="headerlink" href="#pattern-1-branch-naming-convention" title="Permanent link">&para;</a></h3>
+<p><strong>From Blueprint</strong>: <code>{type}/issue-{number}-{slug}</code></p>
+<p><strong>Types</strong>:
+- <code>feature/</code> - New features (default)
+- <code>fix/</code> - Bug fixes
+- <code>hotfix/</code> - Critical production fixes
+- <code>refactor/</code> - Code refactoring
+- <code>test/</code> - Test additions
+- <code>docs/</code> - Documentation changes</p>
+<p><strong>Example</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Issue #42: &quot;Add AWS Solution Architect Skill&quot;
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Branch: feature/issue-42-add-aws-solution-architect-skill
+</code></pre></div></p>
+<p><strong>Enforcement</strong>:
+- ✅ <code>pr-into-dev.yml</code> validates branch names
+- ❌ PRs with invalid names are rejected
+- 📝 Helpful error message shows correct format</p>
+<hr />
+<h3 id="pattern-2-branching-strategy">Pattern 2: Branching Strategy<a class="headerlink" href="#pattern-2-branching-strategy" title="Permanent link">&para;</a></h3>
+<p><strong>Blueprint Strategy</strong>: <code>feature → dev → main</code></p>
+<p><strong>Rules</strong>:
+1. <strong>Base Branch</strong>: All feature branches created from <code>dev</code>
+2. <strong>PR Target</strong>: All feature PRs target <code>dev</code> (not <code>main</code>)
+3. <strong>Release Flow</strong>: Only <code>dev</code> can merge to <code>main</code>
+4. <strong>Hotfix Exception</strong>: <code>hotfix/*</code> can merge to <code>main</code> directly (emergency only)</p>
+<p><strong>Current Branches</strong>:
+- <code>main</code> - Production releases only
+- <code>dev</code> - Active development (new base branch)
+- <code>feature/*</code> - Individual features (auto-created from issues)
+- <code>hotfix/*</code> - Emergency fixes (manual creation)</p>
+<p><strong>Migration</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Create dev branch from current main</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>git<span class="w"> </span>checkout<span class="w"> </span>main
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>dev
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>dev
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Set dev as default branch in GitHub Settings</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1"># Protect both main and dev branches</span>
+</code></pre></div></p>
+<hr />
+<h3 id="pattern-3-auto-branch-creation">Pattern 3: Auto-Branch Creation<a class="headerlink" href="#pattern-3-auto-branch-creation" title="Permanent link">&para;</a></h3>
+<p><strong>Workflow</strong>: <code>create-branch-on-issue.yml</code></p>
+<p><strong>Trigger</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">on</span><span class="p">:</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">issues</span><span class="p">:</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nt">types</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">labeled</span><span class="p p-Indicator">]</span>
+</code></pre></div></p>
+<p><strong>Logic</strong>:
+1. Issue labeled with both <code>claude-code</code> + <code>status:ready</code>
+2. Extract issue number and title
+3. Detect branch type from labels (<code>type:fix</code>, <code>type:feature</code>, etc.)
+4. Create slug from title (sanitize, kebab-case, max 50 chars)
+5. Build branch name: <code>{type}/issue-{number}-{slug}</code>
+6. Create branch from <code>dev</code> (or custom base via <code>base:</code> label)
+7. Post comment with checkout instructions
+8. Update project board status to "In Progress"</p>
+<p><strong>Example Comment</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="gu">## 🌿 Branch Created</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Your feature branch is ready!
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>```bash
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>git fetch origin
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>git checkout feature/issue-42-add-aws-solution-architect-skill
+</code></pre></div></p>
+<p><strong>Next steps</strong>:
+1. Make your changes
+2. Run <code>/commit-smart</code> to commit with quality checks
+3. Run <code>/create-pr</code> to create pull request
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>**Benefits**:
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>- ✅ Consistent naming (no human error)
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>- ✅ Auto-linked to issue
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>- ✅ Clear instructions for developers
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>- ✅ Project board auto-updated
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>---
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>### Pattern 4: PR Validation (dev branch)
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>**Workflow**: `pr-into-dev.yml`
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>**Validations**:
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>1. **Branch Name** - Must match `^(feature|fix|hotfix|test)/`
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>2. **PR Title** - Must follow conventional commits format
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>3. **Issue Linking** - At least one issue must be referenced
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>4. **Quality Gates** - Lint, tests, type-check must pass
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>5. **Fork Safety** - Read-only for fork PRs
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>**Conventional Commit Types**:
+</code></pre></div>
+feat: New feature
+fix: Bug fix
+docs: Documentation changes
+style: Code style (formatting, etc.)
+refactor: Code refactoring
+perf: Performance improvements
+test: Adding/updating tests
+build: Build system changes
+ci: CI/CD changes
+chore: Other changes
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>**Example PR Titles**:
+</code></pre></div>
+✅ feat(skills): add AWS Solution Architect skill
+✅ fix(prompts): correct validation rule in prompt factory
+✅ docs: update README with new slash commands
+❌ Add new skill (missing type)
+❌ Fixed bug (no conventional format)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>**Auto-Comment on Failure**:
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>```markdown
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>## ❌ Invalid PR Title
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>Your PR title doesn&#39;t follow the conventional commit format.
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>**Required format:** `&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;`
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>**Example:** `feat(skills): add AWS Solution Architect skill`
+</code></pre></div></p>
+<hr />
+<h3 id="pattern-5-release-gates-main-branch">Pattern 5: Release Gates (main branch)<a class="headerlink" href="#pattern-5-release-gates-main-branch" title="Permanent link">&para;</a></h3>
+<p><strong>Workflow</strong>: <code>dev-to-main.yml</code></p>
+<p><strong>Allowed Sources</strong>:
+- ✅ <code>dev</code> - Production releases (standard flow)
+- ✅ <code>release/*</code> - Emergency hotfix releases
+- ❌ <code>feature/*</code>, <code>fix/*</code>, <code>test/*</code> - Must merge to dev first</p>
+<p><strong>Production Gates</strong>:
+1. <strong>Production Build</strong> - Must build successfully with <code>NODE_ENV=production</code>
+2. <strong>Build Artifacts</strong> - Verify dist/, build/, out/, .next/ exists
+3. <strong>Smoke Tests</strong> - Run quick sanity tests
+4. <strong>Security Scan</strong> - Basic secret scanning (informational)</p>
+<p><strong>Error Message for Invalid Source</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>❌ Invalid source branch: feature/issue-42-add-aws-skill
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>Only dev and release/* branches may be merged to &#39;main&#39;.
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>All other branches must merge to dev first:
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>  feature/issue-42-add-aws-skill → dev → main
+</code></pre></div></p>
+<hr />
+<h3 id="pattern-6-claude-code-review-integration">Pattern 6: Claude Code Review Integration<a class="headerlink" href="#pattern-6-claude-code-review-integration" title="Permanent link">&para;</a></h3>
+<p><strong>Workflow</strong>: <code>claude-code-review.yml</code> (to be adapted)</p>
+<p><strong>Trigger</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nt">on</span><span class="p">:</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="nt">pull_request_review_comment</span><span class="p">:</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="nt">types</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">created</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span><span class="nt">issue_comment</span><span class="p">:</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="nt">types</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">created</span><span class="p p-Indicator">]</span>
+</code></pre></div></p>
+<p><strong>Logic</strong>:
+1. Detect @claude mention in PR comment
+2. Fetch PR diff and context
+3. Use Claude Code Action (v1 GA) to analyze
+4. Post comprehensive review as comment
+5. Update PR labels based on findings</p>
+<p><strong>Review Output</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="gu">## 🤖 Claude Code Review</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="gs">**Overall Assessment**</span>: Looks good with minor suggestions
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="gu">### 🟢 Strengths</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="k">-</span><span class="w"> </span>Clean code structure
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="k">-</span><span class="w"> </span>Good test coverage
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="k">-</span><span class="w"> </span>Proper error handling
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="gu">### 🟡 Suggestions</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="k">-</span><span class="w"> </span>Consider adding JSDoc comments to public methods
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="k">-</span><span class="w"> </span>Extract magic numbers to constants
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="k">-</span><span class="w"> </span>Add input validation for edge cases
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="gu">### ❌ Issues</span>
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>None found
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a><span class="gs">**Recommendation**</span>: Approve with minor improvements
+</code></pre></div></p>
+<hr />
+<h3 id="pattern-7-smart-commit-command">Pattern 7: Smart Commit Command<a class="headerlink" href="#pattern-7-smart-commit-command" title="Permanent link">&para;</a></h3>
+<p><strong>Slash Command</strong>: <code>/commit-smart</code></p>
+<p><strong>Steps</strong>:
+1. <strong>Check Status</strong> - Show staged/unstaged/untracked files
+2. <strong>Stage Selection</strong> - Interactive or bulk staging
+3. <strong>Secret Detection</strong> - Scan for API keys, tokens, passwords
+4. <strong>Quality Checks</strong> - Run lint, type-check, tests
+5. <strong>Commit Message</strong> - Guide conventional commit format
+6. <strong>Auto-Sign</strong> - Add co-author (Claude)</p>
+<p><strong>Secret Patterns Detected</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>api[_-]?key
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>api[_-]?secret
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>password\s*=\s*[&quot;&#39;][^&quot;&#39;]+
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>token\s*=\s*[&quot;&#39;][^&quot;&#39;]+
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>aws[_-]?access
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>AKIA[0-9A-Z]{16}      # AWS Access Key
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>sk-[a-zA-Z0-9]{32}    # Anthropic API key
+</code></pre></div></p>
+<p><strong>Benefits</strong>:
+- ✅ Prevents committing secrets
+- ✅ Ensures code quality
+- ✅ Enforces commit message standards
+- ✅ Reduces manual steps</p>
+<hr />
+<h3 id="pattern-8-create-pr-command">Pattern 8: Create PR Command<a class="headerlink" href="#pattern-8-create-pr-command" title="Permanent link">&para;</a></h3>
+<p><strong>Slash Command</strong>: <code>/create-pr</code></p>
+<p><strong>Steps</strong>:
+1. <strong>Detect Branch</strong> - Get current branch name
+2. <strong>Validate Name</strong> - Check naming convention
+3. <strong>Push Check</strong> - Ensure branch is pushed to remote
+4. <strong>Target Selection</strong> - Auto-detect <code>dev</code> or allow custom
+5. <strong>Quality Gates</strong> - Run quick lint/test checks
+6. <strong>Extract Issue</strong> - Parse issue number from branch name
+7. <strong>Build PR Body</strong> - Template with checkboxes
+8. <strong>Create PR</strong> - Use <code>gh pr create</code> with proper labels
+9. <strong>Link Issue</strong> - Add "Closes #123" to body</p>
+<p><strong>PR Template Generated</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="gu">## Summary</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>[Briefly describe changes]
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="gu">## Related Issues</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>Closes <span class="ni">#42</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="gu">## Changes Made</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="k">- [ ]</span> Added AWS Solution Architect skill
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="k">- [ ]</span> Created documentation
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="k">- [ ]</span> Added tests
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="k">- [ ]</span> Updated README
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="gu">## Testing</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="k">- [ ]</span> Lint passed
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="k">- [ ]</span> Tests passed
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="k">- [ ]</span> Type check passed
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="k">- [ ]</span> Manual testing complete
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="gu">## Screenshots (if applicable)</span>
+<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a>[Add screenshots]
+<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a>
+<a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a>🤖 Generated with [<span class="nt">Claude Code</span>](<span class="na">https://claude.com/claude-code</span>)
+</code></pre></div></p>
+<hr />
+<h2 id="implementation-roadmap">📋 Implementation Roadmap<a class="headerlink" href="#implementation-roadmap" title="Permanent link">&para;</a></h2>
+<h3 id="phase-1-repository-setup-week-1">Phase 1: Repository Setup (Week 1)<a class="headerlink" href="#phase-1-repository-setup-week-1" title="Permanent link">&para;</a></h3>
+<p><strong>Prerequisites</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># 1. Create dev branch from main</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>git<span class="w"> </span>checkout<span class="w"> </span>main
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>dev
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>dev
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="c1"># 2. Set dev as default branch in GitHub</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="c1"># Settings → Branches → Default branch → dev → Update</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="c1"># 3. Enable required GitHub features</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="c1"># Settings → Features → Issues ✅</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="c1"># Settings → Features → Projects ✅</span>
+</code></pre></div></p>
+<p><strong>Branch Protection Rules</strong>:</p>
+<p><strong>For <code>main</code> branch</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># Settings → Branches → Add rule</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="nt">Branch name pattern</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="nt">Require pull request before merging</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">✅</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">Require approvals</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">Dismiss stale reviews</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">✅</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">Require review from Code Owners</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">✅</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="nt">Require status checks to pass</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">✅</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">Require branches to be up to date</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">✅</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">Status checks</span><span class="p p-Indicator">:</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">validate-source</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">build-prod</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="nt">Require conversation resolution</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">✅</span>
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a><span class="nt">Require linear history</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">✅</span>
+<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a><span class="nt">Do not allow bypassing settings</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">✅</span>
+<a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a><span class="nt">Restrict who can push</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admins only</span>
+<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a><span class="nt">Allow force pushes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">❌</span>
+<a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a><span class="nt">Allow deletions</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">❌</span>
+</code></pre></div></p>
+<p><strong>For <code>dev</code> branch</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nt">Branch name pattern</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dev</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="nt">Require pull request before merging</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">✅</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">Require approvals</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1 (can be relaxed for solo developer)</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="nt">Require status checks to pass</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">✅</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">Status checks</span><span class="p p-Indicator">:</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">validate-branch</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">validate-pr-title</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">quality-gates</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="nt">Require conversation resolution</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">✅</span>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="nt">Allow force pushes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">❌ (only admins)</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="nt">Allow deletions</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">❌</span>
+</code></pre></div></p>
+<p><strong>Deliverables</strong>:
+- [x] <code>dev</code> branch created and set as default
+- [ ] Branch protection rules configured
+- [ ] GitHub features enabled</p>
+<hr />
+<h3 id="phase-2-core-workflows-week-1-2">Phase 2: Core Workflows (Week 1-2)<a class="headerlink" href="#phase-2-core-workflows-week-1-2" title="Permanent link">&para;</a></h3>
+<p><strong>File Structure</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>.github/
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>├── workflows/
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>│   ├── create-branch-on-issue.yml     # Auto-create branches
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>│   ├── pr-into-dev.yml                # Validate PRs to dev
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>│   ├── dev-to-main.yml                # Validate releases
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>│   ├── claude-code-review.yml         # Claude reviews
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>│   └── pr-cleanup.yml                 # Auto-merge &amp; cleanup
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>└── actions/                           # Composite actions (DRY)
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>    ├── fork-safety/                   # Fork PR detection
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>    ├── quality-gates/                 # Lint, test, type-check
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>    └── branch-cleanup/                # Delete merged branches
+</code></pre></div></p>
+<p><strong>1. Create Branch on Issue</strong> (<code>create-branch-on-issue.yml</code>)</p>
+<p><strong>Features</strong>:
+- Trigger: Issue labeled with <code>claude-code</code> + <code>status:ready</code>
+- Branch naming: <code>{type}/issue-{number}-{slug}</code>
+- Type detection from labels (<code>type:feature</code>, <code>type:fix</code>, etc.)
+- Base branch: <code>dev</code> (or custom via <code>base:</code> label)
+- Post checkout instructions as comment</p>
+<p><strong>Adaptation Notes</strong>:
+- Use blueprint's workflow almost as-is
+- Adjust default base branch from <code>dev</code> → <code>main</code> fallback to just <code>dev</code>
+- Update project board integration (if using GitHub Projects)</p>
+<hr />
+<p><strong>2. PR Validation (Dev)</strong> (<code>pr-into-dev.yml</code>)</p>
+<p><strong>Validations</strong>:
+1. Branch name format (enforce convention)
+2. PR title (conventional commits)
+3. Issue linking (at least one issue)
+4. Quality gates (lint, tests, type-check)
+5. Fork safety (read-only for forks)</p>
+<p><strong>Quality Gates</strong> (composite action):
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># .github/actions/quality-gates/action.yml</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Quality Gates</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run lint, tests, and type checks</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="nt">runs</span><span class="p">:</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w">  </span><span class="nt">using</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">composite</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="w">  </span><span class="nt">steps</span><span class="p">:</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run linter</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">npm run lint</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bash</span>
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run type check</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">npm run type-check || npx tsc --noEmit</span>
+<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bash</span>
+<a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a>
+<a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run tests</span>
+<a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">npm test</span>
+<a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bash</span>
+<a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a><span class="w">      </span><span class="nt">env</span><span class="p">:</span>
+<a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a><span class="w">        </span><span class="nt">CI</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div></p>
+<p><strong>Adaptation Notes</strong>:
+- Skills Factory may not have lint/test scripts
+- Make quality gates optional with graceful fallback
+- Focus on YAML validation for skills</p>
+<hr />
+<p><strong>3. Release Gates (Main)</strong> (<code>dev-to-main.yml</code>)</p>
+<p><strong>Validations</strong>:
+1. Source must be <code>dev</code> or <code>release/*</code>
+2. Production build must succeed
+3. All tests must pass
+4. No failing quality checks</p>
+<p><strong>Adaptation Notes</strong>:
+- May not need production builds for this repo
+- Focus on ensuring all skills are valid
+- Validate YAML frontmatter in skills</p>
+<hr />
+<p><strong>4. Claude Code Review</strong> (<code>claude-code-review.yml</code>)</p>
+<p><strong>Trigger</strong>: @claude mentioned in PR comment</p>
+<p><strong>Actions</strong>:
+1. Fetch PR diff
+2. Run Claude Code Action for review
+3. Post review as comment
+4. Add labels based on review (needs-work, ready-to-merge)</p>
+<p><strong>Blueprint Reference</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1"># Use Claude Code Action v1 GA</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run Claude Code Review</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">anthropics/claude-code-action@v1</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">  </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">    </span><span class="nt">anthropic-api-key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.ANTHROPIC_API_KEY }}</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="w">    </span><span class="nt">github-token</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ github.token }}</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="w">    </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">auto</span><span class="w">  </span><span class="c1"># Auto-detect PR review</span>
+</code></pre></div></p>
+<p><strong>Adaptation Notes</strong>:
+- Requires <code>ANTHROPIC_API_KEY</code> secret
+- Optional for this repo (can be added later)
+- Focus on code quality and YAML validation</p>
+<hr />
+<p><strong>5. PR Auto-Merge &amp; Cleanup</strong> (<code>pr-cleanup.yml</code>)</p>
+<p><strong>Trigger</strong>: PR approved and all checks pass</p>
+<p><strong>Actions</strong>:
+1. Auto-merge PR to dev
+2. Delete source branch
+3. Post cleanup confirmation comment</p>
+<p><strong>Blueprint Pattern</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Auto-Merge and Cleanup</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="nt">on</span><span class="p">:</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">  </span><span class="nt">pull_request_review</span><span class="p">:</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">    </span><span class="nt">types</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">submitted</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="nt">jobs</span><span class="p">:</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">  </span><span class="nt">auto-merge</span><span class="p">:</span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="w">    </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">github.event.review.state == &#39;approved&#39;</span>
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Auto-merge PR</span>
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pascalgn/automerge-action@v0.16.3</span>
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a><span class="w">        </span><span class="nt">env</span><span class="p">:</span>
+<a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a><span class="w">          </span><span class="nt">GITHUB_TOKEN</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.GITHUB_TOKEN }}</span>
+<a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a><span class="w">          </span><span class="nt">MERGE_METHOD</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">squash</span>
+<a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a><span class="w">          </span><span class="nt">MERGE_DELETE_BRANCH</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div></p>
+<p><strong>Adaptation Notes</strong>:
+- Use squash merge to keep history clean
+- Delete branch immediately after merge
+- Post comment confirming cleanup</p>
+<hr />
+<h3 id="phase-3-slash-commands-week-2">Phase 3: Slash Commands (Week 2)<a class="headerlink" href="#phase-3-slash-commands-week-2" title="Permanent link">&para;</a></h3>
+<p><strong>File Structure</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>.claude/commands/github/
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>├── commit-smart.md           # Smart commits with quality checks
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>├── create-pr.md              # PR creation with auto-linking
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>├── switch-to-dev.md          # Switch back to dev branch
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>└── start-task.md             # Start new task (create issue + branch)
+</code></pre></div></p>
+<p><strong>1. /commit-smart</strong> - Smart Commit Command</p>
+<p><strong>Features</strong>:
+- Git status check
+- Interactive staging
+- Secret detection (API keys, tokens, etc.)
+- Quality checks (lint, test, type-check)
+- Conventional commit guidance
+- Auto co-author (Claude)</p>
+<p><strong>Usage</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>User: /commit-smart
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>Claude: [Runs all checks, guides commit message, creates commit]
+</code></pre></div></p>
+<p><strong>Adaptation Notes</strong>:
+- Copy blueprint command almost as-is
+- Adjust quality checks for this repo
+- Add YAML validation for skills</p>
+<hr />
+<p><strong>2. /create-pr</strong> - Create PR Command</p>
+<p><strong>Features</strong>:
+- Branch detection and validation
+- Auto-push if not pushed
+- Target branch selection (auto-detect <code>dev</code>)
+- Quality gates before PR
+- Extract issue number from branch
+- Build PR body from template
+- Create PR with <code>gh pr create</code>
+- Auto-link issues</p>
+<p><strong>Usage</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>User: /create-pr
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>Claude: [Validates, runs checks, creates PR targeting dev]
+</code></pre></div></p>
+<p><strong>Adaptation Notes</strong>:
+- Always target <code>dev</code> (not <code>main</code>)
+- Custom PR template for skills
+- Add skill validation checklist</p>
+<hr />
+<p><strong>3. /switch-to-dev</strong> - Switch Branch Command (NEW)</p>
+<p><strong>Purpose</strong>: Ensure developer is back on <code>dev</code> before starting next task</p>
+<p><strong>Features</strong>:
+- Check current branch
+- Warn if uncommitted changes
+- Stash if requested
+- Switch to <code>dev</code>
+- Pull latest changes
+- Confirm ready for next task</p>
+<p><strong>Usage</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>User: /switch-to-dev
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>Claude: [Checks status, switches to dev, pulls latest]
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>✅ Switched to dev branch and pulled latest changes
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>Ready to start next task!
+</code></pre></div></p>
+<hr />
+<p><strong>4. /start-task</strong> - Start Task Command (NEW)</p>
+<p><strong>Purpose</strong>: Streamline starting a new task</p>
+<p><strong>Features</strong>:
+1. Ensure on <code>dev</code> branch
+2. Pull latest changes
+3. Ask for task description
+4. Create GitHub issue (or use existing)
+5. Label issue (<code>claude-code</code>, <code>status:ready</code>, <code>type:feature</code>)
+6. Wait for auto-branch creation
+7. Checkout new branch
+8. Post ready message</p>
+<p><strong>Usage</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>User: /start-task
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>Claude: What task would you like to work on?
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>User: Add new skill for X
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>Claude:
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>1. Created issue #123: &quot;Add new skill for X&quot;
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>2. Labeled with claude-code, status:ready, type:feature
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>3. Branch created: feature/issue-123-add-new-skill-for-x
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>4. Checked out branch
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>
+<a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a>✅ Ready to work! Start coding on feature/issue-123-add-new-skill-for-x
+</code></pre></div></p>
+<hr />
+<h3 id="phase-4-documentation-training-week-2-3">Phase 4: Documentation &amp; Training (Week 2-3)<a class="headerlink" href="#phase-4-documentation-training-week-2-3" title="Permanent link">&para;</a></h3>
+<p><strong>Create Documentation</strong>:</p>
+<ol>
+<li><strong>GITHUB_WORKFLOW.md</strong> - Complete workflow guide</li>
+<li>Branching strategy</li>
+<li>How to start a task</li>
+<li>How to create PR</li>
+<li>How to merge to main</li>
+<li>
+<p>Emergency procedures</p>
+</li>
+<li>
+<p><strong>Update README.md</strong> - Add workflow section
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="gu">## GitHub Workflow</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>This repository uses an automated GitHub workflow with Claude Code integration.
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="gs">**Quick Start**</span>:
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="k">1.</span> Run <span class="sb">`/start-task`</span> to begin new work
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="k">2.</span> Make your changes
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="k">3.</span> Run <span class="sb">`/commit-smart`</span> to commit
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="k">4.</span> Run <span class="sb">`/create-pr`</span> to create PR
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a><span class="k">5.</span> Tag <span class="ni">@claude</span> for review
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a><span class="k">6.</span> After approval → auto-merged to dev
+<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a><span class="k">7.</span> Run <span class="sb">`/switch-to-dev`</span> before next task
+<a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a>
+<a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a>See [<span class="nt">GITHUB_WORKFLOW.md</span>](<span class="na">GITHUB_WORKFLOW.md</span>) for complete guide.
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Update CLAUDE.md</strong> - Add workflow context
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="gu">## Branching Workflow</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="gs">**IMPORTANT**</span>: Never push directly to <span class="sb">`main`</span> or <span class="sb">`dev`</span>.
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="gs">**Standard Flow**</span>:
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>feature/issue-123-name → dev → main
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a><span class="gs">**Slash Commands**</span>:
+<a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a><span class="k">-</span><span class="w"> </span><span class="sb">`/start-task`</span> - Start new task (creates issue + branch)
+<a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a><span class="k">-</span><span class="w"> </span><span class="sb">`/commit-smart`</span> - Smart commit with quality checks
+<a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a><span class="k">-</span><span class="w"> </span><span class="sb">`/create-pr`</span> - Create PR targeting dev
+<a id="__codelineno-26-12" name="__codelineno-26-12" href="#__codelineno-26-12"></a><span class="k">-</span><span class="w"> </span><span class="sb">`/switch-to-dev`</span> - Return to dev after task
+</code></pre></div></p>
+</li>
+</ol>
+<hr />
+<h2 id="quick-win-start-with-minimal-implementation">🚀 Quick Win: Start with Minimal Implementation<a class="headerlink" href="#quick-win-start-with-minimal-implementation" title="Permanent link">&para;</a></h2>
+<h3 id="immediate-actions-this-week">Immediate Actions (This Week)<a class="headerlink" href="#immediate-actions-this-week" title="Permanent link">&para;</a></h3>
+<p>Instead of implementing everything at once, start with core essentials:</p>
+<p><strong>1. Create <code>dev</code> branch and protect it</strong> ✅ (Done)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>main
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>dev
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>dev
+</code></pre></div></p>
+<p><strong>2. Add branch protection rules</strong> (GitHub UI)
+- Protect <code>main</code>: Require PR, 1 approval, no direct push
+- Protect <code>dev</code>: Require PR, status checks</p>
+<p><strong>3. Create ONE workflow</strong>: <code>pr-into-dev.yml</code>
+- Validate branch names
+- Validate PR titles
+- Basic quality gates (optional)</p>
+<p><strong>4. Create TWO commands</strong>:
+- <code>/create-pr</code> - Create PR targeting dev
+- <code>/switch-to-dev</code> - Switch back to dev</p>
+<p><strong>5. Update CLAUDE.md with workflow rules</strong></p>
+<hr />
+<h2 id="success-criteria">✅ Success Criteria<a class="headerlink" href="#success-criteria" title="Permanent link">&para;</a></h2>
+<h3 id="week-1-goals">Week 1 Goals<a class="headerlink" href="#week-1-goals" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[x] <code>dev</code> branch created</li>
+<li>[ ] Branch protection configured (main + dev)</li>
+<li>[ ] <code>pr-into-dev.yml</code> workflow working</li>
+<li>[ ] <code>/create-pr</code> command working</li>
+<li>[ ] CLAUDE.md updated with workflow rules</li>
+</ul>
+<h3 id="week-2-goals">Week 2 Goals<a class="headerlink" href="#week-2-goals" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] <code>/commit-smart</code> command working</li>
+<li>[ ] <code>/start-task</code> command working</li>
+<li>[ ] <code>create-branch-on-issue.yml</code> working</li>
+<li>[ ] Auto-merge &amp; cleanup working</li>
+</ul>
+<h3 id="week-3-goals">Week 3 Goals<a class="headerlink" href="#week-3-goals" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Claude Code review integration</li>
+<li>[ ] <code>dev-to-main.yml</code> workflow</li>
+<li>[ ] Documentation complete</li>
+<li>[ ] Team trained on new workflow</li>
+</ul>
+<hr />
+<h2 id="team-training">🎓 Team Training<a class="headerlink" href="#team-training" title="Permanent link">&para;</a></h2>
+<h3 id="for-developers">For Developers<a class="headerlink" href="#for-developers" title="Permanent link">&para;</a></h3>
+<p><strong>Starting a New Task</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1"># Option 1: Use slash command</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>/start-task
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="c1"># Option 2: Manual</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="m">1</span>.<span class="w"> </span>Create<span class="w"> </span>issue<span class="w"> </span>on<span class="w"> </span>GitHub
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a><span class="m">2</span>.<span class="w"> </span>Label:<span class="w"> </span>claude-code,<span class="w"> </span>status:ready,<span class="w"> </span>type:feature
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="m">3</span>.<span class="w"> </span>Wait<span class="w"> </span><span class="k">for</span><span class="w"> </span>auto-branch<span class="w"> </span>creation
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a><span class="m">4</span>.<span class="w"> </span>git<span class="w"> </span>fetch<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>feature/issue-123-name
+</code></pre></div></p>
+<p><strong>Working on Task</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="c1"># Make changes</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="c1"># ...</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="c1"># Commit (with quality checks)</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>/commit-smart
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a><span class="c1"># Create PR</span>
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>/create-pr
+</code></pre></div></p>
+<p><strong>After Merge</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="c1"># Return to dev</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>/switch-to-dev
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="c1"># Start next task</span>
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>/start-task
+</code></pre></div></p>
+<h3 id="for-reviewers">For Reviewers<a class="headerlink" href="#for-reviewers" title="Permanent link">&para;</a></h3>
+<p><strong>Review Process</strong>:
+1. Receive PR notification
+2. Review code on GitHub
+3. Tag @claude for automated review (optional)
+4. Approve or request changes
+5. After approval → Auto-merged to dev
+6. Branch auto-deleted</p>
+<hr />
+<h2 id="customization-options">🔧 Customization Options<a class="headerlink" href="#customization-options" title="Permanent link">&para;</a></h2>
+<h3 id="branch-naming-variations">Branch Naming Variations<a class="headerlink" href="#branch-naming-variations" title="Permanent link">&para;</a></h3>
+<p>If you prefer different naming:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>Current: feature/issue-123-add-aws-skill
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>Options:
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>1. feat/123-add-aws-skill         (shorter, no &quot;issue&quot;)
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>2. feature/add-aws-skill-123      (issue at end)
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>3. 123-feature-add-aws-skill      (issue first)
+</code></pre></div></p>
+<p><strong>To customize</strong>: Edit regex in <code>create-branch-on-issue.yml</code> and <code>pr-into-dev.yml</code></p>
+<h3 id="branching-strategy-variations">Branching Strategy Variations<a class="headerlink" href="#branching-strategy-variations" title="Permanent link">&para;</a></h3>
+<p><strong>Current Plan</strong>: <code>feature → dev → main</code></p>
+<p><strong>Alternative</strong>: <code>feature → dev → staging → main</code> (if needed)
+- Add <code>staging</code> branch
+- Update workflows to allow <code>dev → staging</code> and <code>staging → main</code></p>
+<h3 id="quality-gates-customization">Quality Gates Customization<a class="headerlink" href="#quality-gates-customization" title="Permanent link">&para;</a></h3>
+<p><strong>Make optional</strong> if repo doesn't have tests:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run tests</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">npm test</span>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="w">  </span><span class="nt">continue-on-error</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">  </span><span class="c1"># Don&#39;t fail if no tests</span>
+</code></pre></div></p>
+<hr />
+<h2 id="reference-links">📚 Reference Links<a class="headerlink" href="#reference-links" title="Permanent link">&para;</a></h2>
+<p><strong>Blueprint Repository</strong>:
+- Local: <code>/Users/rezarezvani/projects/claudecode-github-bluprint</code>
+- GitHub: <code>https://github.com/alirezarezvani/claude-code-github-workflow</code></p>
+<p><strong>Key Blueprint Files</strong>:
+- <code>implementation.md</code> - Complete PRD and implementation plan
+- <code>.github/workflows/create-branch-on-issue.yml</code> - Auto-branch creation
+- <code>.github/workflows/pr-into-dev.yml</code> - PR validation
+- <code>.github/workflows/dev-to-main.yml</code> - Release gates
+- <code>.claude/commands/github/commit-smart.md</code> - Smart commit
+- <code>.claude/commands/github/create-pr.md</code> - PR creation</p>
+<p><strong>Official Documentation</strong>:
+- <a href="https://docs.github.com/en/actions">GitHub Actions</a>
+- <a href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches">Branch Protection</a>
+- <a href="https://www.conventionalcommits.org/">Conventional Commits</a>
+- <a href="https://github.com/anthropics/claude-code-action">Claude Code Action</a></p>
+<hr />
+<h2 id="next-steps">🎯 Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Review this plan</strong> with team</li>
+<li><strong>Decide on timeline</strong> (1 week, 2 weeks, or 3 weeks)</li>
+<li><strong>Start with Phase 1</strong> (Repository Setup)</li>
+<li><strong>Implement Phase 2</strong> (Core Workflows) incrementally</li>
+<li><strong>Add Phase 3</strong> (Slash Commands) for developer experience</li>
+<li><strong>Complete Phase 4</strong> (Documentation) for sustainability</li>
+</ol>
+<p><strong>Recommended</strong>: Start with "Quick Win" approach (minimal implementation this week, expand next week)</p>
+<hr />
+<p><strong>Created</strong>: November 12, 2025
+<strong>Author</strong>: Claude Code
+<strong>Status</strong>: Planning - Ready for Review and Implementation</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

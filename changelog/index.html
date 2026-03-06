@@ -1,0 +1,1751 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://smartmur.github.io/claude-code-skill-factory/changelog/">
+      
+      
+        <link rel="prev" href="../security/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/smartmur-logo.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+    
+    
+      
+        <title>Changelog - SmartMur Skill Factory</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#changelog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="SmartMur Skill Factory" class="md-header__button md-logo" aria-label="SmartMur Skill Factory" data-md-component="logo">
+      
+  <img src="../assets/smartmur-logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SmartMur Skill Factory
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Changelog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SmartMur/claude-code-skill-factory" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SmartMur/claude-code-skill-factory
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SmartMur Skill Factory" class="md-nav__button md-logo" aria-label="SmartMur Skill Factory" data-md-component="logo">
+      
+  <img src="../assets/smartmur-logo.svg" alt="logo">
+
+    </a>
+    SmartMur Skill Factory
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SmartMur/claude-code-skill-factory" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SmartMur/claude-code-skill-factory
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Foundation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Foundation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../foundation/mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mission
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../foundation/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../foundation/roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../foundation/project-status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project Status
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflow Adaptation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#150-2025-11-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.5.0] - 2025-11-06
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.5.0] - 2025-11-06">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#140-2025-10-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.4.0] - 2025-10-30
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.4.0] - 2025-10-30">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#220-2025-10-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [2.2.0] - 2025-10-29
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[2.2.0] - 2025-10-29">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#210-2025-10-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [2.1.0] - 2025-10-29
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[2.1.0] - 2025-10-29">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200-2025-10-28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [2.0.0] - 2025-10-28
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[2.0.0] - 2025-10-28">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#120-2025-10-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.2.0] - 2025-10-23
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.2.0] - 2025-10-23">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#110-2025-10-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.1.0] - 2025-10-21
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.1.0] - 2025-10-21">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100-2025-10-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.0.0] - 2025-10-20
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.0.0] - 2025-10-20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Version Guidelines
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#150-2025-11-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.5.0] - 2025-11-06
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.5.0] - 2025-11-06">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#140-2025-10-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.4.0] - 2025-10-30
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.4.0] - 2025-10-30">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#220-2025-10-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [2.2.0] - 2025-10-29
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[2.2.0] - 2025-10-29">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#210-2025-10-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [2.1.0] - 2025-10-29
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[2.1.0] - 2025-10-29">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200-2025-10-28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [2.0.0] - 2025-10-28
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[2.0.0] - 2025-10-28">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#120-2025-10-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.2.0] - 2025-10-23
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.2.0] - 2025-10-23">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#110-2025-10-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.1.0] - 2025-10-21
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.1.0] - 2025-10-21">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100-2025-10-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.0.0] - 2025-10-20
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.0.0] - 2025-10-20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Version Guidelines
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h1>
+<p>All notable changes to this project will be documented in this file.</p>
+<p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
+and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<hr />
+<h2 id="150-2025-11-06">[1.5.0] - 2025-11-06<a class="headerlink" href="#150-2025-11-06" title="Permanent link">&para;</a></h2>
+<h3 id="added">Added<a class="headerlink" href="#added" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>3 Production-Ready Skills</strong>:</li>
+<li>Scrum Master Agent (15 files) - Sprint analytics, backlog prioritization, multi-tool integration</li>
+<li>TDD Guide (15 files) - Test generation, coverage analysis, multi-framework support</li>
+<li>Tech Stack Evaluator (14 files) - TCO calculation, security assessment, migration analysis</li>
+<li><strong>GitHub CI/CD Specialist Mega-Prompt</strong> (~4,800 tokens) - Complete GitHub Actions workflow blueprint</li>
+<li><strong>Git Governance Workflows</strong>:</li>
+<li>Commit validation (conventional commits with commitlint)</li>
+<li>Branch naming enforcement (feat/<em>, fix/</em>, docs/*, etc.)</li>
+<li>CI quality gates (Python syntax, markdown links, security audit)</li>
+<li>Release orchestration</li>
+<li><strong>10 Git Slash Commands</strong> for workflow automation</li>
+</ul>
+<h3 id="changed">Changed<a class="headerlink" href="#changed" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Disabled yamllint check in CI (creates false positives with markdown in bash strings)</li>
+<li>Updated SKILLS_FACTORY_PROMPT with file cleanliness standards</li>
+</ul>
+<h3 id="fixed">Fixed<a class="headerlink" href="#fixed" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Branch naming convention validation (slash instead of dash)</li>
+<li>YAML syntax in workflow files (heredoc format for multiline strings)</li>
+</ul>
+<hr />
+<h2 id="140-2025-10-30">[1.4.0] - 2025-10-30<a class="headerlink" href="#140-2025-10-30" title="Permanent link">&para;</a></h2>
+<h3 id="added_1">Added<a class="headerlink" href="#added_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Codex CLI Bridge</strong> skill (48 KB) - Seamless interoperability between Claude Code and OpenAI Codex CLI</li>
+<li>Reference-based architecture (no file duplication)</li>
+<li>Automatic CLAUDE.md → AGENTS.md translation</li>
+<li>Cross-tool team collaboration support</li>
+<li><strong>7 Python modules</strong> for bridge functionality:</li>
+<li>bridge.py - Main orchestrator with CLI interface</li>
+<li>safety_mechanism.py - Environment validation (Codex CLI + CLAUDE.md checks)</li>
+<li>claude_parser.py - CLAUDE.md parser with YAML frontmatter support</li>
+<li>project_analyzer.py - Project structure and metadata analysis</li>
+<li>agents_md_generator.py - Template-based AGENTS.md generation</li>
+<li>skill_documenter.py - Different approaches for functional vs prompt-based skills</li>
+<li>codex_executor.py - Codex CLI helpers (always uses 'codex exec')</li>
+<li><strong>2 new slash commands</strong>:</li>
+<li>/sync-agents-md - Regenerate AGENTS.md from CLAUDE.md (integrates with /init, /update-claude, /check-docs)</li>
+<li>/codex-exec - Execute Codex CLI commands with proper syntax (analysis, edit, search, resume types)</li>
+<li><strong>AGENTS.md generation</strong> - Auto-generates Codex CLI-compatible documentation from CLAUDE.md</li>
+<li>19 KB output for claude-code-skills-factory (629 lines, 13 skills, 59 agents)</li>
+<li>Workflow pattern translations (Claude commands → Codex equivalents)</li>
+<li>Command reference table (Claude Code ↔ Codex CLI)</li>
+<li>MCP integration documentation</li>
+<li><strong>Safety mechanisms</strong>:</li>
+<li>Auto-validates Codex CLI installation</li>
+<li>Auto-runs /init if CLAUDE.md missing (with user notification)</li>
+<li>Minimal CLAUDE.md fallback generation</li>
+<li>Comprehensive error handling</li>
+<li><strong>Package distribution</strong> - package.sh script creates distributable ZIP (48 KB) with SHA256 checksum</li>
+</ul>
+<h3 id="changed_1">Changed<a class="headerlink" href="#changed_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>README.md completely revised</strong> for better focus on shortcuts and efficiency</li>
+<li>Added "Quick Start (3 Shortcuts)" section at top</li>
+<li>Added "Built-in Commands" section with tables for 7 slash commands and 4 interactive agents</li>
+<li>Added "Complete Workflow Examples" with 3 real-world scenarios</li>
+<li>Enhanced Repository Structure with detailed .claude/ breakdown</li>
+<li>Improved Production Skills section with "Most Popular" and "New" badges</li>
+<li>Added emojis for better scannability</li>
+<li>Reduced from 876 to 367 lines while adding more practical content</li>
+<li><strong>Repository structure</strong> - Added AGENTS.md to root and new slash commands to .claude/commands/</li>
+</ul>
+<h3 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Use Cases</strong>: Cross-tool teams, project migration, CI/CD integration, skills marketplace compatibility</li>
+<li><strong>Model selection helpers</strong>: gpt-5 (general reasoning) vs gpt-5-codex (code editing)</li>
+<li><strong>Sandbox modes</strong>: read-only, workspace-write, danger-full-access</li>
+<li><strong>Workflow integration</strong>: /sync-agents-md integrates with existing Claude Code commands</li>
+<li><strong>Complete documentation</strong> (6 files): SKILL.md, README, HOW_TO_USE, INSTALL, CHANGELOG, samples</li>
+</ul>
+<h3 id="fixed_1">Fixed<a class="headerlink" href="#fixed_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Consolidated README.md for 58% reduction in length (876 → 367 lines) while adding practical shortcuts</li>
+<li>Better focus on built-in commands and workflow efficiency</li>
+</ul>
+<hr />
+<h2 id="220-2025-10-29">[2.2.0] - 2025-10-29<a class="headerlink" href="#220-2025-10-29" title="Permanent link">&para;</a></h2>
+<h3 id="added_2">Added<a class="headerlink" href="#added_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>MASTER_SLASH_COMMANDS_PROMPT.md</strong> - Comprehensive master template (~1500 lines) for generating slash commands following official Anthropic patterns</li>
+<li><strong>documentation/references/</strong> folder - 6 official Anthropic slash command examples for pattern reference</li>
+<li><strong>Three official command structure patterns</strong> integrated into slash-command-factory:</li>
+<li>Simple Pattern (code-review) - Context → Task for straightforward workflows</li>
+<li>Multi-Phase Pattern (codebase-analyze) - Discovery → Analysis → Task for complex documentation</li>
+<li>Agent-Style Pattern (ultrathink, openapi-sync) - Role → Process → Guidelines for expert coordination</li>
+<li><strong>7 new official presets</strong> - code-review, codebase-analyze, update-docs, openapi-sync, ultrathink, deps-audit, metrics-report</li>
+<li><strong>Comprehensive four-layer validation</strong> - Command name (kebab-case), bash permissions (specific only), arguments usage ($ARGUMENTS), YAML structure</li>
+<li><strong>Smart generation features</strong>:</li>
+<li>Auto-detect command structure pattern based on purpose</li>
+<li>Auto-generate bash permissions (git, discovery, comprehensive patterns)</li>
+<li>Automatic kebab-case naming conversion with validation</li>
+<li><strong>Test command</strong> - marketing-research.md generated and validated as demonstration</li>
+</ul>
+<h3 id="changed_2">Changed<a class="headerlink" href="#changed_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Slash Command Factory enhanced to v2.0</strong> (26 KB)</li>
+<li>Expanded from 10 to 17 presets (10 original + 7 official examples)</li>
+<li>SKILL.md enhanced with official patterns documentation (~1000 lines)</li>
+<li>command_generator.py enhanced with structure detection, naming validation, bash permission generation</li>
+<li>validator.py enhanced with comprehensive four-layer validation system</li>
+<li>presets.json expanded with 7 new official preset commands</li>
+<li>HOW_TO_USE.md updated with pattern guide and naming convention examples</li>
+<li><strong>README.md updated</strong> to version 1.3.0</li>
+<li>Repository structure diagram includes all 4 templates and documentation/references/</li>
+<li>Slash Command Factory section enhanced with v2.0 details</li>
+<li>Quick Reference updated with MASTER_SLASH_COMMANDS_PROMPT.md</li>
+<li>Version section updated with comprehensive v1.3.0 changelog</li>
+<li><strong>CLAUDE.md updated</strong></li>
+<li>Repository structure diagram includes all 4 templates and documentation/references/</li>
+<li>Templates for Generation section enhanced with MASTER_SLASH_COMMANDS_PROMPT.md details</li>
+<li>Slash Command Factory (#11) description enhanced with comprehensive v2.0 capabilities</li>
+</ul>
+<h3 id="documentation_1">Documentation<a class="headerlink" href="#documentation_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Validation strictness</strong> - All generated commands must pass four-layer validation</li>
+<li><strong>Bash permission patterns</strong> - Never uses wildcard <code>Bash</code>, always specific commands (<code>Bash(git status:*)</code>)</li>
+<li><strong>Naming convention</strong> - Enforced kebab-case (2-4 words) with automatic conversion algorithm</li>
+<li><strong>Arguments standard</strong> - Always <code>$ARGUMENTS</code>, never positional <code>$1, $2, $3</code></li>
+</ul>
+<hr />
+<h2 id="210-2025-10-29">[2.1.0] - 2025-10-29<a class="headerlink" href="#210-2025-10-29" title="Permanent link">&para;</a></h2>
+<h3 id="added_3">Added<a class="headerlink" href="#added_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Slash Command Factory</strong> skill - Generate custom Claude Code slash commands with 10 powerful presets</li>
+<li><strong>Interactive Navigation Agents</strong> (4 agents) - Conversational guides for building Skills, Prompts, Agents, and Commands</li>
+<li>factory-guide (orchestrator) - Delegates to appropriate specialist</li>
+<li>skills-guide - Builds Claude Skills through 4-5 questions</li>
+<li>prompts-guide - Guides prompt-factory usage (69 presets)</li>
+<li>agents-guide - Builds Claude Code Agents through 5-6 questions</li>
+<li><strong>5 Workflow Slash Commands</strong> - Complete start-to-finish workflow</li>
+<li>/build - Start building (invokes orchestrator or specialists)</li>
+<li>/validate-output - Quality check with auto-ZIP creation</li>
+<li>/install-skill - Installation guidance</li>
+<li>/test-factory - Testing examples</li>
+<li>/factory-status - Progress tracking</li>
+<li><strong>Public Gist</strong> - Slash Command Factory guide for SEO/AEO</li>
+<li><strong>10 Slash Command Presets</strong> - Business research, content analysis, medical translation, compliance audit, API building, test automation, docs generation, knowledge extraction, workflow optimization, agent coordination</li>
+</ul>
+<h3 id="changed_3">Changed<a class="headerlink" href="#changed_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>README reorganized</strong> - Navigation system moved to end (before Contributing)</li>
+<li><strong>README enhanced</strong> - Added Slash Command Factory (#8 in Generated Skills)</li>
+<li><strong>/validate-output</strong> - Now auto-creates ZIP files on successful validation</li>
+<li><strong>CLAUDE.md</strong> - Added Slash Command Factory (#11) documentation</li>
+<li><strong>GISTS.md</strong> - Added 4th public gist (Slash Command Factory)</li>
+<li><strong>Documentation references</strong> - Updated with slash-command-factory links</li>
+</ul>
+<h3 id="added-documentation">Added Documentation<a class="headerlink" href="#added-documentation" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>.claude/agents/</code> - 4 navigation agents (orchestrator + 3 specialists)</li>
+<li><code>.claude/commands/</code> - 5 workflow commands</li>
+<li><code>generated-skills/slash-command-factory/</code> - Complete skill with presets</li>
+<li><code>documentation/references/</code> - Slash command examples from Anthropic</li>
+</ul>
+<hr />
+<h2 id="200-2025-10-28">[2.0.0] - 2025-10-28<a class="headerlink" href="#200-2025-10-28" title="Permanent link">&para;</a></h2>
+<h3 id="added_4">Added<a class="headerlink" href="#added_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Health SDK Builder</strong> skill - Comprehensive healthcare Agent SDK builder with HIPAA/GDPR/DSGVO/PTV 10 compliance</li>
+<li><strong>Multilingual support</strong> - German + English mandatory for healthcare applications</li>
+<li><strong>Therapy modalities</strong> - CBT, Psychodynamic, Psychoanalysis, Depth Psychology</li>
+<li><strong>German PTV 10 automation</strong> - 60-session therapy applications (2.5 DIN A4 pages)</li>
+<li><strong>Medical terminology translation</strong> - 8th-10th grade reading level for patients</li>
+<li><strong>2025 Claude API features</strong> - Computer Use, Code Execution, Files API, Extended Caching</li>
+<li><strong>PR-to-issue auto-close workflow</strong> - Automatically close linked issues when PRs merge</li>
+<li><strong>README Option C</strong> - Prompt Factory as third quick-start path</li>
+<li><strong>Public Gists</strong> - 3 comprehensive guides for SEO and Answer Engine Optimization</li>
+<li><strong>Professional standards</strong> - CONTRIBUTING.md, LICENSE (MIT), .editorconfig</li>
+<li><strong>.github consolidation</strong> - 6 files merged into single GITHUB_WORKFLOWS_GUIDE.md</li>
+<li><strong>.archive structure</strong> - Organized historical documents</li>
+<li><strong>Security audit</strong> - Complete security audit and SECURITY.md policy</li>
+</ul>
+<h3 id="changed_4">Changed<a class="headerlink" href="#changed_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>README enhanced</strong> - Added Complementary Resources (Claude Code Tresor, Claude Skills Library)</li>
+<li><strong>README structure</strong> - Three-path quick start (Skills, Agents, Prompts)</li>
+<li><strong>prompt-suite → prompt-factory</strong> - Renamed for clarity</li>
+<li><strong>Repository size</strong> - Reduced from 37MB to 10MB (73% reduction)</li>
+<li><strong>.gitignore updated</strong> - Proper exclusions for test/development content</li>
+</ul>
+<h3 id="removed">Removed<a class="headerlink" href="#removed" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>test-workspace/</strong> - Moved to separate testing repository (31MB freed)</li>
+<li><strong>github-docs/</strong> - Temporary reference files deleted (48KB)</li>
+<li><strong>.DS_Store files</strong> - macOS metadata cleaned (7 files)</li>
+<li><strong>claude-skills-examples/</strong> from tracking - Reference material, gitignored</li>
+<li><strong>Outdated workflow docs</strong> - 6 files consolidated into 1</li>
+<li><strong>Internal files</strong> from tracking - TEST_CLAUDE_REVIEW.md, claude-skills-instructions.md</li>
+</ul>
+<h3 id="fixed_2">Fixed<a class="headerlink" href="#fixed_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Skill naming</strong> - health-sdk-builder (removed "claude" reserved word)</li>
+<li><strong>Gitignore rules</strong> - Proper exclusions for all test/dev content</li>
+<li><strong>Documentation references</strong> - Updated to point to consolidated guides</li>
+</ul>
+<h3 id="security">Security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>API key isolation</strong> - Separate testing repository for SDK development</li>
+<li><strong>Gitignore enhanced</strong> - All sensitive files excluded</li>
+<li><strong>.archive/</strong> - Internal documents organized and excluded</li>
+</ul>
+<hr />
+<h2 id="120-2025-10-23">[1.2.0] - 2025-10-23<a class="headerlink" href="#120-2025-10-23" title="Permanent link">&para;</a></h2>
+<h3 id="added_5">Added<a class="headerlink" href="#added_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Prompt Factory skill (403KB) - World-class prompt generation with 69 presets</li>
+<li>PROMPTS_FACTORY_PROMPT.md template</li>
+<li>Generated prompts examples (5 sample outputs)</li>
+<li>Marketing growth prompt builder</li>
+</ul>
+<h3 id="changed_5">Changed<a class="headerlink" href="#changed_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Expanded coverage to 15 professional domains</li>
+<li>Multi-format output (XML/Claude/ChatGPT/Gemini)</li>
+</ul>
+<hr />
+<h2 id="110-2025-10-21">[1.1.0] - 2025-10-21<a class="headerlink" href="#110-2025-10-21" title="Permanent link">&para;</a></h2>
+<h3 id="added_6">Added<a class="headerlink" href="#added_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Psychology Advisor skill (31KB) - Evidence-based mental wellness</li>
+<li>CBT techniques (cognitive distortions, thought records)</li>
+<li>Mindfulness exercises</li>
+<li>Stress management tools</li>
+</ul>
+<hr />
+<h2 id="100-2025-10-20">[1.0.0] - 2025-10-20<a class="headerlink" href="#100-2025-10-20" title="Permanent link">&para;</a></h2>
+<h3 id="added_7">Added<a class="headerlink" href="#added_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Initial repository structure</li>
+<li>SKILLS_FACTORY_PROMPT.md template</li>
+<li>AGENTS_FACTORY_PROMPT.md template</li>
+<li>Example skills (Financial Analysis, Brand Guidelines, Financial Models)</li>
+<li>AWS Solution Architect skill (53KB)</li>
+<li>Content Trend Researcher skill (35KB)</li>
+<li>Microsoft 365 Tenant Manager skill (40KB)</li>
+<li>Agent Factory skill (12KB)</li>
+<li>GitHub automation workflows (10 workflows)</li>
+<li>Documentation structure</li>
+</ul>
+<hr />
+<h2 id="version-guidelines">Version Guidelines<a class="headerlink" href="#version-guidelines" title="Permanent link">&para;</a></h2>
+<p><strong>Major version</strong> (X.0.0): Breaking changes, major new features
+<strong>Minor version</strong> (0.X.0): New features, backward compatible
+<strong>Patch version</strong> (0.0.X): Bug fixes, documentation updates</p>
+<hr />
+<p><strong>Current Version</strong>: 1.4.0
+<strong>Last Updated</strong>: October 30, 2025</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
