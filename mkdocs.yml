@@ -1,0 +1,56 @@
+site_name: SmartMur Skill Factory
+site_url: https://smartmur.github.io/claude-code-skill-factory/
+repo_url: https://github.com/SmartMur/claude-code-skill-factory
+repo_name: SmartMur/claude-code-skill-factory
+
+theme:
+  name: material
+  logo: assets/smartmur-logo.svg
+  favicon: assets/smartmur-logo.svg
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Foundation:
+    - Mission: foundation/mission.md
+    - Architecture: foundation/architecture.md
+    - Roadmap: foundation/roadmap.md
+    - Project Status: foundation/project-status.md
+  - Workflow Adaptation: workflow.md
+  - Contributing: contributing.md
+  - Security: security.md
+  - Changelog: changelog.md
