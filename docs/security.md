@@ -41,7 +41,7 @@
 - `CLAUDE_CODE_OAUTH_TOKEN` - Claude Code authentication (scoped)
 - `PROJECTS_TOKEN` - Project board access (scoped: repo + project only)
 
-**Audit Status**: ✅ Last audited October 28, 2025 - No exposed credentials ([See Audit](.github/SECURITY_AUDIT.md))
+**Audit Status**: Last audited October 28, 2025 - No exposed credentials ([See Audit](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/.github/SECURITY_AUDIT.md))
 
 ---
 
@@ -71,7 +71,7 @@
 - ✅ Professional boundaries
 - ✅ Evidence-based practices only
 
-**Documentation**: See [HEALTHCARE_COMPLIANCE_GUIDE.md](generated-skills/claude-health-sdk-builder/compliance/HEALTHCARE_COMPLIANCE_GUIDE.md)
+**Documentation**: See [HEALTHCARE_COMPLIANCE_GUIDE.md](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/generated-skills/claude-health-sdk-builder/compliance/HEALTHCARE_COMPLIANCE_GUIDE.md)
 
 ---
 
@@ -119,7 +119,7 @@ claude_args: '--allowed-tools "Bash(gh issue:*),Bash(gh pr:*)"'
 - Dry-run mode for safety
 - Documented procedures
 
-**Emergency Procedures**: See [.github/GITHUB_WORKFLOWS_GUIDE.md](.github/GITHUB_WORKFLOWS_GUIDE.md#emergency-procedures)
+**Emergency Procedures**: See [GITHUB_WORKFLOWS_GUIDE.md](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/.github/GITHUB_WORKFLOWS_GUIDE.md#emergency-procedures)
 
 ---
 
@@ -277,9 +277,9 @@ claude_args: '--allowed-tools "Bash(gh issue:*),Bash(gh pr:*)"'
 ## 🔗 Security Resources
 
 ### Documentation
-- **Security Audit**: [.github/SECURITY_AUDIT.md](.github/SECURITY_AUDIT.md)
-- **Workflows Guide**: [.github/GITHUB_WORKFLOWS_GUIDE.md](.github/GITHUB_WORKFLOWS_GUIDE.md)
-- **Healthcare Compliance**: [HEALTHCARE_COMPLIANCE_GUIDE.md](generated-skills/claude-health-sdk-builder/compliance/HEALTHCARE_COMPLIANCE_GUIDE.md)
+- **Security Audit**: [SECURITY_AUDIT.md](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/.github/SECURITY_AUDIT.md)
+- **Workflows Guide**: [GITHUB_WORKFLOWS_GUIDE.md](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/.github/GITHUB_WORKFLOWS_GUIDE.md)
+- **Healthcare Compliance**: [HEALTHCARE_COMPLIANCE_GUIDE.md](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/generated-skills/claude-health-sdk-builder/compliance/HEALTHCARE_COMPLIANCE_GUIDE.md)
 
 ### External Resources
 - **GitHub Security**: https://docs.github.com/en/code-security
@@ -357,7 +357,7 @@ claude_args: '--allowed-tools "Bash(gh issue:*),Bash(gh pr:*)"'
 6. **Document**: Post-incident report
 7. **Prevent**: Update procedures to prevent recurrence
 
-**Emergency Contacts**: See [.github/GITHUB_WORKFLOWS_GUIDE.md](.github/GITHUB_WORKFLOWS_GUIDE.md#emergency-procedures)
+**Emergency Contacts**: See [GITHUB_WORKFLOWS_GUIDE.md](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/.github/GITHUB_WORKFLOWS_GUIDE.md#emergency-procedures)
 
 ---
 

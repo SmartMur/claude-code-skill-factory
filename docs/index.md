@@ -58,7 +58,7 @@ This toolkit includes **10 slash commands** and **5 interactive agents** to stre
 | **agents-guide** | Build Claude Code Agents (5-6 questions) | "Create an agent" |
 | **hooks-guide** | Build Claude Code Hooks (5-7 questions) | "Build a hook" |
 
-See [.claude/agents/README.md](.claude/agents/README.md) and [.claude/commands/README.md](.claude/commands/README.md) for complete documentation.
+See [Agents README](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/.claude/agents/README.md) and [Commands README](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/.claude/commands/README.md) for complete documentation.
 
 ---
 
@@ -72,7 +72,7 @@ Generate complete, production-ready Claude Skills with:
 - Complete documentation and usage guides
 - ZIP packages for easy distribution
 
-**Template**: [SKILLS_FACTORY_PROMPT.md](documentation/templates/SKILLS_FACTORY_PROMPT.md)
+**Template**: [SKILLS_FACTORY_PROMPT.md](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/documentation/templates/SKILLS_FACTORY_PROMPT.md)
 **Shortcut**: `/build skill` or "I want to build a skill"
 
 ### 2. Agents Factory
@@ -82,7 +82,7 @@ Create specialized Claude Code Agents with:
 - Auto-invocation capabilities
 - Tool access configuration
 
-**Template**: [AGENTS_FACTORY_PROMPT.md](documentation/templates/AGENTS_FACTORY_PROMPT.md)
+**Template**: [AGENTS_FACTORY_PROMPT.md](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/documentation/templates/AGENTS_FACTORY_PROMPT.md)
 **Shortcut**: `/build agent` or "I want to create an agent"
 
 ### 3. Prompt Factory
@@ -92,7 +92,7 @@ Generate mega-prompts for any role with:
 - 7-point quality validation
 - Core & Advanced modes
 
-**Ready-to-use Skill**: [generated-skills/prompt-factory/](generated-skills/prompt-factory/)
+**Ready-to-use Skill**: [generated-skills/prompt-factory/](https://github.com/SmartMur/claude-code-skill-factory/tree/dev/generated-skills/prompt-factory/)
 **Shortcut**: Install skill, then "I need a prompt for [role]"
 
 ### 4. Hooks Factory
@@ -103,8 +103,8 @@ Generate Claude Code hooks for workflow automation with:
 - Interactive Q&A generation (5-7 questions)
 - Automatic security checks before installation
 
-**Template**: [HOOKS_FACTORY_PROMPT.md](documentation/templates/HOOKS_FACTORY_PROMPT.md)
-**Implementation**: [generated-skills/hook-factory/](generated-skills/hook-factory/)
+**Template**: [HOOKS_FACTORY_PROMPT.md](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/documentation/templates/HOOKS_FACTORY_PROMPT.md)
+**Implementation**: [generated-skills/hook-factory/](https://github.com/SmartMur/claude-code-skill-factory/tree/dev/generated-skills/hook-factory/)
 **Shortcut**: `/build hook` or "I want to build a hook"
 
 ### 5. Slash Command Factory
@@ -114,7 +114,7 @@ Create custom slash commands with:
 - Comprehensive 4-layer validation
 - Auto-generated bash permissions
 
-**Template**: [MASTER_SLASH_COMMANDS_PROMPT.md](documentation/templates/MASTER_SLASH_COMMANDS_PROMPT.md)
+**Template**: [MASTER_SLASH_COMMANDS_PROMPT.md](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/documentation/templates/MASTER_SLASH_COMMANDS_PROMPT.md)
 **Shortcut**: Use template directly or `/build` with custom workflow
 
 ### 6. Codex CLI Bridge
@@ -124,7 +124,7 @@ Enable Claude Code ↔ Codex CLI interoperability with:
 - Safety mechanisms and auto-validation
 - Cross-tool team collaboration support
 
-**Skill**: [generated-skills/codex-cli-bridge/](generated-skills/codex-cli-bridge/)
+**Skill**: [generated-skills/codex-cli-bridge/](https://github.com/SmartMur/claude-code-skill-factory/tree/dev/generated-skills/codex-cli-bridge/)
 **Shortcut**: `/sync-agents-md` to sync documentation
 
 ---
@@ -231,45 +231,45 @@ All skills include complete implementation, documentation, samples, and distribu
 
 ### 1. AWS Solution Architect (53 KB)
 Serverless architecture, IaC templates, cost optimization
-- [View Skill](generated-skills/aws-solution-architect/)
+- [View Skill](https://github.com/SmartMur/claude-code-skill-factory/tree/dev/generated-skills/aws-solution-architect/)
 
 ### 2. Content Trend Researcher (35 KB)
 Multi-platform trend analysis, SEO-optimized outlines
-- [View Skill](generated-skills/content-trend-researcher/)
+- [View Skill](https://github.com/SmartMur/claude-code-skill-factory/tree/dev/generated-skills/content-trend-researcher/)
 
 ### 3. Microsoft 365 Tenant Manager (40 KB)
 M365 administration, PowerShell automation
-- [View Skill](generated-skills/ms365-tenant-manager/)
+- [View Skill](https://github.com/SmartMur/claude-code-skill-factory/tree/dev/generated-skills/ms365-tenant-manager/)
 
 ### 4. Agent Factory (12 KB)
 Generate custom Claude Code agents with enhanced YAML
-- [View Skill](generated-skills/agent-factory/)
+- [View Skill](https://github.com/SmartMur/claude-code-skill-factory/tree/dev/generated-skills/agent-factory/)
 
 ### 5. Prompt Factory (427 KB)
 69 professional presets, multi-format output, 7-point validation
-- [View Skill](generated-skills/prompt-factory/)
+- [View Skill](https://github.com/SmartMur/claude-code-skill-factory/tree/dev/generated-skills/prompt-factory/)
 - **Most Popular** - Install first for instant productivity
 
 ### 6. Slash Command Factory (26 KB)
 17 presets, official Anthropic patterns, 4-layer validation
-- [View Skill](generated-skills/slash-command-factory/)
+- [View Skill](https://github.com/SmartMur/claude-code-skill-factory/tree/dev/generated-skills/slash-command-factory/)
 
 ### 7. Codex CLI Bridge (48 KB)
 Claude Code ↔ Codex CLI interoperability, AGENTS.md generation
-- [View Skill](generated-skills/codex-cli-bridge/)
+- [View Skill](https://github.com/SmartMur/claude-code-skill-factory/tree/dev/generated-skills/codex-cli-bridge/)
 - Enables cross-tool team collaboration
 
 ### 8. Hook Factory v2.0 (92 KB) 🆕
 Build custom Claude Code hooks through interactive 7-question Q&A with automated installation and enhanced validation
-- [View Skill](generated-skills/hook-factory/)
+- [View Skill](https://github.com/SmartMur/claude-code-skill-factory/tree/dev/generated-skills/hook-factory/)
 - **v2.0** - 10 production templates, automated installer (Python + Bash), secrets detection, event-specific validation
 
 ### 9. CLAUDE.md Enhancer (50 KB) 🆕
 Analyze, generate, and enhance CLAUDE.md files with 100% native format compliance, interactive initialization, and automatic maintenance
-- [View Skill](generated-skills/claude-md-enhancer/)
+- [View Skill](https://github.com/SmartMur/claude-code-skill-factory/tree/dev/generated-skills/claude-md-enhancer/)
 - **Ecosystem**: Skill + Agent + Slash Command for complete CLAUDE.md lifecycle management
 - **Features**: Interactive workflow, quality scoring (0-100), modular architecture, 7 built-in examples
-- **Companion Agent**: [claude-md-guardian](generated-agents/claude-md-guardian/) - Background maintenance with auto-sync
+- **Companion Agent**: [claude-md-guardian](https://github.com/SmartMur/claude-code-skill-factory/tree/dev/generated-agents/claude-md-guardian/) - Background maintenance with auto-sync
 - **Slash Command**: `/enhance-claude-md` - Initialize or enhance CLAUDE.md files
 
 ---
@@ -282,7 +282,7 @@ Three fully-functional example skills demonstrating different patterns:
 - **Creating Financial Models** - DCF valuation, sensitivity analysis, Monte Carlo simulation
 - **Applying Brand Guidelines** - Corporate branding application
 
-See [claude-skills-examples/](claude-skills-examples/) for implementation details.
+See [claude-skills-examples/](https://github.com/SmartMur/claude-code-skill-factory/tree/dev/claude-skills-examples/) for implementation details.
 
 ---
 
@@ -302,14 +302,14 @@ See [claude-skills-examples/](claude-skills-examples/) for implementation detail
 
 ## 📚 Documentation
 
-- **Skills Guide**: [documentation/references/claude-skills-instructions.md](documentation/references/claude-skills-instructions.md) - Complete Anthropic documentation
-- **Agents Guide**: [documentation/references/claude-agents-instructions.md](documentation/references/claude-agents-instructions.md) - Complete Anthropic documentation
-- **Codex CLI Reference**: [documentation/references/openai-codex-cli-instructions.md](documentation/references/openai-codex-cli-instructions.md) - Complete OpenAI Codex CLI documentation
-- **Slash Commands Examples**: [documentation/references/](documentation/references/) - Official Anthropic examples
-- **Factory Templates**: [documentation/templates/](documentation/templates/) - 4 generation templates
-- **Project Guide**: [CLAUDE.md](CLAUDE.md) - Repository structure and workflows
-- **Interactive Agents**: [.claude/agents/README.md](.claude/agents/README.md) - Guide agent documentation
-- **Slash Commands**: [.claude/commands/README.md](.claude/commands/README.md) - Command reference
+- **Skills Guide**: [claude-skills-instructions.md](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/documentation/references/claude-skills-instructions.md) - Complete Anthropic documentation
+- **Agents Guide**: [claude-agents-instructions.md](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/documentation/references/claude-agents-instructions.md) - Complete Anthropic documentation
+- **Codex CLI Reference**: [openai-codex-cli-instructions.md](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/documentation/references/openai-codex-cli-instructions.md) - Complete OpenAI Codex CLI documentation
+- **Slash Commands Examples**: [documentation/references/](https://github.com/SmartMur/claude-code-skill-factory/tree/dev/documentation/references/) - Official Anthropic examples
+- **Factory Templates**: [documentation/templates/](https://github.com/SmartMur/claude-code-skill-factory/tree/dev/documentation/templates/) - 4 generation templates
+- **Project Guide**: [CLAUDE.md](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/CLAUDE.md) - Repository structure and workflows
+- **Interactive Agents**: [Agents README](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/.claude/agents/README.md) - Guide agent documentation
+- **Slash Commands**: [Commands README](https://github.com/SmartMur/claude-code-skill-factory/blob/dev/.claude/commands/README.md) - Command reference
 
 ---
 
@@ -381,7 +381,7 @@ This repository provides examples and templates for creating Claude Skills. The 
 - Multi-format output (XML/Claude/ChatGPT/Gemini)
 - 7-point quality validation system
 
-**See**: [CHANGELOG.md](CHANGELOG.md) for complete version history
+**See**: [CHANGELOG.md](changelog.md) for complete version history
 
 ---
 
@@ -391,4 +391,4 @@ This repository provides examples and templates for creating Claude Skills. The 
 
 ---
 
-**Ready to build?** Try one of the shortcuts above, or explore the [factory templates](documentation/templates/) to start generating production-ready skills, agents, prompts, or slash commands!
+**Ready to build?** Try one of the shortcuts above, or explore the [factory templates](https://github.com/SmartMur/claude-code-skill-factory/tree/dev/documentation/templates/) to start generating production-ready skills, agents, prompts, or slash commands!
